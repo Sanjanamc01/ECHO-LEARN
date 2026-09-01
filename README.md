@@ -1,4 +1,4 @@
-EchoLearn
+##EchoLearn
 An AAC-Based Assistive Learning Platform for Autism and Down Syndrome
 📌 About the Project
 
