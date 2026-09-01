@@ -1,0 +1,59 @@
+/* Line 1: Base styles for the entire page */
+body {
+  margin: 0;                      /* Line 3: Remove default margin around the page */
+  font-family: Arial, sans-serif; /* Line 4: Set a clean, readable font */
+  background-color: #f5f5f5;      /* Line 5: Light grey background color */
+}
+
+/* Line 8: Container class used to center content on the screen */
+.container {
+  width: 100%;                    /* Line 10: Full width */
+  height: 100vh;                  /* Line 11: Full viewport height */
+  display: flex;                  /* Line 12: Use flexbox layout */
+  flex-direction: column;         /* Line 13: Stack children vertically */
+  justify-content: center;        /* Line 14: Center items vertically */
+  align-items: center;            /* Line 15: Center items horizontally */
+  gap: 15px;                      /* Line 16: Space between elements */
+}
+
+/* Line 19: Styles for the main title text (NUDI, Create Account) */
+.title {
+  font-size: 32px;                /* Line 21: Large font size */
+  font-weight: bold;              /* Line 22: Bold text */
+  color: #222;                    /* Line 23: Dark grey/black color */
+  margin-bottom: 20px;            /* Line 24: Extra space below title */
+}
+
+/* Line 27: Styles for the buttons (Login & Create Account) */
+.btn {
+  width: 220px;                   /* Line 29: Fixed button width */
+  padding: 10px;                  /* Line 30: Inner spacing */
+  font-size: 16px;                /* Line 31: Medium font size */
+  border: none;                   /* Line 32: No border lines */
+  background-color: #007bff;      /* Line 33: Blue background */
+  color: white;                   /* Line 34: White button text */
+  cursor: pointer;                /* Line 35: Pointer cursor on hover */
+}
+
+/* Line 38: Hover effect for buttons */
+.btn:hover {
+  background-color: #0056b3;      /* Line 40: Darker blue on hover */
+}
+
+/* Line 43: Styles for text inputs */
+.input {
+  width: 260px;                   /* Line 45: Input width slightly wider than buttons */
+  padding: 8px;                   /* Line 46: Inner space */
+  font-size: 14px;                /* Line 47: Input text size */
+  border: 1px solid #ccc;         /* Line 48: Light grey border */
+  border-radius: 4px;             /* Line 49: Slightly rounded corners */
+}
+
+/* Line 52: Styles for clickable text links (Create Account, Back to Login) */
+.link {
+  font-size: 14px;                /* Line 54: Smaller text */
+  color: #007bff;                 /* Line 55: Blue text color */
+  text-decoration: underline;     /* Line 56: Underlined to look like a link */
+  cursor: pointer;                /* Line 57: Pointer cursor on hover */
+  margin-top: 10px;               /* Line 58: Space above the link */
+}

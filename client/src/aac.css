@@ -1,0 +1,229 @@
+.aac-container {
+  padding: 15px;
+  background: #dff1ff;
+  min-height: 100vh;
+}
+
+/* SENTENCE BAR TOP */
+.sentence-bar {
+  background: white;
+  padding: 12px;
+  min-height: 60px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.placeholder {
+  opacity: 0.5;
+}
+
+/* SPEAK / CLEAR / EDIT */
+.aac-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-tiny {
+  padding: 8px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.speak { background: #3cb043; color: white; }
+.clear { background: #cf3333; color: white; }
+.edit  { background: #5555ff; color: white; }
+
+/* CATEGORY GRID */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* FIXED 6 PER ROW */
+    gap: 20px;
+    padding: 10px 30px;
+    justify-items: center;
+}
+
+
+.category-card {
+  width: 200px;        /* was too small */
+  height: 200px;       /* bigger tiles */
+  background: #bfe1ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  font-size: 22px;     /* bigger text */
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.category-card:hover { transform: scale(1.06); }
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.category-text {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* logout button */
+.logout {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+.sentence-bar {
+  background: white;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  min-height: 80px;       /* taller to hold images */
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.sentence-icon {
+  text-align: center;
+  min-width: 60px;
+    padding: 10px;
+  font-size: 22px;
+}
+
+.sentence-icon img {
+  height: 80px;
+  width: 80px;
+}
+
+/* 🔥 HOME TILE GRID */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);   /* << FIXED 6 tiles in one row */
+    gap: 25px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* 🔥 SUB CATEGORY ICON TILE GRID */
+.subgrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* FIXED 6 PER ROW */
+    gap: 20px;
+    padding: 10px 30px;
+    justify-items: center;
+}
+
+/* 🔥 HOME TILE + SUB TILE SIZE (same for both pages) */
+.tile {
+    width: 200px;
+    height: 200px;
+    background: #FFE6EC;        /* light-pink background */
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+/* 🔥 IMAGE INSIDE TILE */
+.tile img {
+    width:120px !important;
+    height:120px !important;
+    object-fit: contain;
+}
+
+/* 🔥 SENTENCE STRIP ICONS (PICTOGRAMS NOW VISIBLE) */
+.sentence-icon {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12px;
+}
+.sentence-icon img {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+/* Selected tile for delete */
+.tile.selected {
+    border: 3px solid red;
+    scale: 1.07;
+}
+
+/* Delete + Add buttons */
+.btn.delete { background:#ff4d4d; }
+.btn.add    { background:#4CAF50; }
+
+/* ⚠️ NEW FORM IMPROVED UI */
+
+.modal {
+  background: #fff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 14px;
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 25px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  color: #222;
+}
+
+.modal-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1.5px solid #bbb;
+}
+
+.save-btn {
+  background: #4CAF50;
+  color: white;
+  font-size: 17px;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.save-btn:hover { background:#3da843; }
+
+.cancel-btn {
+  background: #333;
+  color:white;
+  border:none;
+  padding:10px;
+  margin-top:5px;
+  border-radius:8px;
+}
+.cancel-btn:hover { background:#111; }
