@@ -1,95 +1,156 @@
 EchoLearn
 An AAC-Based Assistive Learning Platform for Autism and Down Syndrome
+📌 About the Project
 
-EchoLearn is a web-based assistive learning application designed to support children with speech and communication difficulties. The platform combines Augmentative and Alternative Communication (AAC) with pronunciation practice, helping children communicate using symbols while also improving their speech articulation.
+EchoLearn is a web-based assistive learning platform designed to support children with speech and communication difficulties.
 
-Features
+The application combines Augmentative and Alternative Communication (AAC) with pronunciation practice in a single platform. Children can communicate using symbol-based pictograms while also practicing words and sentences to improve their pronunciation and articulation.
+
+The system provides phoneme-level speech assessment, visual articulation guidance, and progress tracking to support continuous learning.
+
+✨ Features
 🗣️ AAC Communication Board
 Symbol-based communication using pictorial tiles.
-Allows children to construct sentences.
-Text-to-Speech functionality for spoken output.
-Child-friendly interface with simple navigation.
+Enables children to select symbols and construct sentences.
+Converts constructed sentences into spoken output.
+Provides a simple and child-friendly communication interface.
 🎤 Pronunciation Practice
-Allows children to practice words and sentences using speech input.
-Evaluates pronunciation at the phoneme level.
-Identifies pronunciation difficulties and provides targeted feedback.
-Supports repeated practice for improved speech accuracy.
+Allows children to practice words and sentences.
+Records speech using the device microphone.
+Evaluates pronunciation using phoneme-level analysis.
+Identifies pronunciation errors and provides targeted feedback.
+Supports repeated practice to improve pronunciation.
 👄 Visual Articulation Guidance
-Provides visual guidance for pronunciation.
-Demonstrates mouth and lip positioning.
-Uses SVG-based animations to make articulation learning interactive and engaging.
+Provides visual guidance for incorrect pronunciation.
+Demonstrates appropriate lip and mouth positioning.
+Uses SVG-based animations for interactive learning.
+Helps children understand how individual sounds are produced.
 📊 Progress Tracking
-Tracks pronunciation practice sessions.
+Stores pronunciation practice sessions.
+Tracks pronunciation performance over time.
 Identifies weak phonemes and frequently mispronounced words.
-Displays learning progress using interactive charts and analytics.
-Tech Stack
+Displays progress through charts and analytics.
+
+🛠️ Tech Stack
 Frontend
-React.js
-JavaScript
-HTML5
-CSS3
-Web Speech API
-MediaRecorder API
-SVG Animation
-Recharts
+Technology	Purpose
+React.js	User Interface Development
+JavaScript	Application Logic
+HTML5	Web Page Structure
+CSS3	Styling and Design
+Web Speech API	Text-to-Speech Functionality
+MediaRecorder API	Speech Recording
+SVG Animation	Articulation Visualization
+Recharts	Progress Analytics
+
 Backend
-Node.js
-Express.js
-REST APIs
+Technology	Purpose
+Node.js	Server-Side Runtime
+Express.js	Backend Framework
+REST APIs	Frontend-Backend Communication
 Database
-MongoDB
+Technology	Purpose
+MongoDB	Data Storage
 Speech Assessment
-Microsoft Azure Pronunciation Assessment API
-System Workflow
-The child logs into the application.
-The child can communicate using the AAC symbol board.
-Selected symbols are combined to form a sentence.
-The system converts the sentence into speech using Text-to-Speech.
-The child can access the pronunciation practice module.
-The child's speech is recorded using the device microphone.
-The speech is evaluated using Microsoft Azure Pronunciation Assessment.
-The system provides pronunciation feedback and articulation guidance.
-Practice results are stored for progress tracking.
-Parents or caregivers can view the child's progress through analytics.
-Key Objectives
-Support communication through an AAC-based symbol board.
-Provide pronunciation practice for children with speech difficulties.
-Analyse speech at the phoneme level.
+Technology	Purpose
+Microsoft Azure Pronunciation Assessment API	Phoneme-Level Pronunciation Evaluation
+
+⚙️ System Workflow
+Child Login
+     │
+     ▼
+┌─────────────────────────┐
+│     EchoLearn Platform  │
+└─────────────────────────┘
+     │
+     ├──────────────────────────────┐
+     ▼                              ▼
+AAC Communication              Pronunciation
+     Board                       Practice
+     │                              │
+     ▼                              ▼
+Select Symbols                 Record Speech
+     │                              │
+     ▼                              ▼
+Construct Sentence            Speech Assessment
+     │                              │
+     ▼                              ▼
+Text-to-Speech Output         Phoneme Analysis
+                                    │
+                                    ▼
+                            Articulation Guidance
+                                    │
+                                    ▼
+                              Progress Tracking
+                              
+🎯 Key Objectives
+Develop a symbol-based AAC communication system.
+Support sentence construction using pictorial symbols.
+Provide text-to-speech functionality.
+Enable pronunciation practice using speech input.
+Analyse pronunciation at the phoneme level.
 Provide visual articulation guidance.
-Track pronunciation progress over time.
-Create an accessible and child-friendly learning environment.
-Target Users
+Identify weak phonemes and pronunciation difficulties.
+Track learning and pronunciation progress over time.
+Provide a simple and child-friendly interface.
+
+👥 Target Users
+
+EchoLearn is designed to support:
+
 Children with Autism Spectrum Disorder (ASD).
 Children with Down Syndrome.
 Children experiencing speech and communication difficulties.
 Parents and caregivers.
-Teachers and speech therapists.
-Project Structure
+Teachers.
+Speech therapists.
+
+📂 Project Structure
 EchoLearn/
 │
-├── client/                 # React Frontend
+├── client/
 │   ├── components/
 │   ├── pages/
-│   └── assets/
+│   ├── assets/
+│   └── App.js
 │
-├── server/                 # Node.js and Express Backend
+├── server/
 │   ├── controllers/
 │   ├── routes/
 │   ├── models/
-│   └── middleware/
+│   ├── middleware/
+│   └── server.js
 │
-└── README.md
-Future Enhancements
+├── README.md
+│
+└── package.json
+
+🔄 Application Flow
+The user logs into the EchoLearn platform.
+The child can access the AAC communication board.
+Symbols are selected to construct a sentence.
+The constructed sentence is converted into speech using Text-to-Speech.
+The child can access the pronunciation practice module.
+Speech is recorded using the device microphone.
+The speech input is evaluated using the Microsoft Azure Pronunciation Assessment API.
+The system analyses pronunciation at the phoneme level.
+Visual articulation guidance is provided.
+Practice results are stored for progress tracking.
+Progress analytics can be viewed by parents or caregivers.
+
+🚀 Future Enhancements
+
 Support for multiple languages.
 Personalized pronunciation exercises.
-Advanced AI-based speech analysis.
 Gamification and reward-based learning.
-Enhanced therapist and parent dashboards.
-Mobile application support.
-Author
+Advanced speech analysis.
+Enhanced parent and therapist dashboards.
+Mobile application development.
+Adaptive learning recommendations.
 
+👩‍💻 Author
 Sanjana M C
 
-License
+📄 License
 
-This project is developed for educational and research purposes.
+This project was developed for educational and research purposes.
