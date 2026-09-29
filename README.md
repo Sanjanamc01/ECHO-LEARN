@@ -70,26 +70,6 @@ Parents and caregivers.
 Teachers.
 Speech therapists.
 
-### 📂 Project Structure
-EchoLearn/
-│
-├── client/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.js
-│
-├── server/
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│   ├── middleware/
-│   └── server.js
-│
-├── README.md
-│
-└── package.json
-
 ### 🔄 Application Flow
 The user logs into the EchoLearn platform.
 The child can access the AAC communication board.
